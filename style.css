@@ -1,0 +1,303 @@
+/* Глобальні стилі */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Шапка */
+header {
+  background-color: #222;
+  padding: 16px 32px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a img {
+  width: 48px;
+  height: 48px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #EBEBFC;
+}
+
+/* Основна секція */
+.main-section {
+  padding: 80px 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.row {
+  display: flex;
+  gap: 24px;
+}
+
+.box {
+  background: #EBEBFC;
+  border-radius: 30px;
+}
+
+.box-1 {
+  width: 100%;
+  max-width: 438px;
+  height: 300px;
+  background-image: url("https://i.pinimg.com/736x/d5/ef/ea/d5efea4356392c41c4d61f0e84af0183.jpg");
+  background-size: cover;
+}
+
+.box-2 {
+  width: 100%;
+  height: 300px;
+  background-image: url("https://i.pinimg.com/736x/d8/ca/1a/d8ca1ad31d269eb211d90ad7a3c72c77.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box-3 {
+  width: 322px;
+  max-height: 344px;
+  overflow: hidden;
+  text-align: center;
+  padding: 40px;
+  font-size: 20px;
+}
+
+.side-box {
+  width: 100%;
+  max-height: 100%;
+  background-image: url("https://i.pinimg.com/736x/a3/ae/06/a3ae06da2e4bb7d85aa41349e4af50e0.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.text-box {
+  width: 679px;
+  height: 344px;
+  background: #EBEBFC;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello-box {
+  font-size: 200px;
+  font-weight: 900;
+  color: #5D5A88;
+}
+
+/* Info Section */
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.info-box {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  line-height: 1.5;
+  background: #EBEBFC;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Секція About */
+.gallery-section {
+  padding: 60px 114px;
+}
+
+.button-container {
+  background-color: #EBEBFC;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 72px;
+}
+
+.button-container:hover {
+  background-color: #c1377b;
+}
+
+.image-gallery {
+  margin: 32px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.img_container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.img_container a img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.img_container a:hover img {
+  transform: scale(1.05);
+}
+
+.img_small {
+  border-radius: 12px;
+  height: 333px;
+}
+
+.img_big {
+  border-radius: 12px;
+  height: 440px;
+}
+
+.info-header {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.info-title {
+  color: #5D5A88;
+}
+
+.info-subtitle {
+  color: #ADABC3;
+}
+
+.info-description {
+  color: #9795B5;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.social img {
+  width: 40px;
+  margin: 0 8px;
+  transition: opacity 0.3s ease;
+}
+
+.social img:hover {
+  opacity: 0.7;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 114px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  color: #EBEBFC;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #c1377b;
+}
+
+footer .Logo img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+footer .Logo {
+  max-width: 300px;
+}
+
+footer .Menu,
+footer .Company {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_galery img {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  border-radius: 10px;
+}
